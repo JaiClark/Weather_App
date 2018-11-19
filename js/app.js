@@ -1,4 +1,6 @@
 var x = document.getElementById("denied");
+var lat = position.coords.latitude;
+var long = position.coords.longitude;
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -11,6 +13,8 @@ function getLocation() {
 function showPosition(position) {
     console.log("Latitude: " + position.coords.latitude + 
     " Longitude: " + position.coords.longitude);
+    console.log(lat);
+    console.log(long);
 }
 
 function showError(error) {
