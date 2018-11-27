@@ -30,7 +30,7 @@ var http = new XMLHttpRequest();
             console.log(json);
             w.innerHTML = json.weather[0].main;
             c.innerHTML = json.name + ", " + json.sys.country;
-            d.innerHTML = json.main.temp + " " + tempUnit;
+            d.innerHTML = Math.round(json.main.temp) * 9 / 5 + 32 + " " + newTempUnit;
             i.innerHTML = "<img src= ' " + json.weather[0].icon + " ' height='70' width='70' ></img>";
             var j = document.getElementById("change").onclick = function(){
                 

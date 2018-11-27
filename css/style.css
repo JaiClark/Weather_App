@@ -12,8 +12,10 @@ body {
     width: 900px;
 } */
 
-#city {
-  margin-top: 10%;
+.inner {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 15%;
 }
 
 .container {
