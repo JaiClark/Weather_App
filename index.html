@@ -17,32 +17,30 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
 
-  <body onload = "getLocation()">
-    <div class="container">
-      <!-- <label class="switch">
-        <input type="checkbox" /> <button onclick="convert('C')" class="slider round"></button>
-      </label> -->
-      <div class="inner">
-          <h1 id="city"></h1>
-          <p><span id="city"></span> <span id="country"></span></p>
-          <h1 id="degrees"></h1>
-          <h1  id="farenheit"></h1>
-          <h1 id="change"></h1>
-          <!-- <button onclick="chess()" id = "change" class="btn">Switch F/C</button> -->
-        <h1 id = "weather"></h1>
-        <span id="icon"></span>
-        <p><span id="temp"></span><span class="temp" id="tempunit" ></span></p>
-      </div>
+  <body>
+    <div>
+   <div class="container">
+      <h1>Local Weather</h1>
+    
+ 
+     
+      <p id="location"></p>
+      <p id="description"></p>
+      <p id="temp"></p>
+      <br>
+      <hr>
+      <button class="btn" id="celdegree">Celcius</button>
+      <button class="btn" id="fardegree" >Farenheit</button>
     </div>
   
     <!-- JavaScript Down Below -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     
     <script src="js/app.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
